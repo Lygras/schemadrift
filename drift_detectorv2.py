@@ -28,7 +28,7 @@ with open("activity_logs.json") as f:
         # Only check for brand‐new paths
         new = current - seen
         if new:
-            print(f"⚠️  New nested path(s) at record {idx}: {new}")
+            print(f" New nested path(s) at record {idx}: {new}")
 
         # Update the seen set
         seen |= current
